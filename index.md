@@ -4,7 +4,7 @@ sitemap:
     priority: 1.0
 ---
 
-Hey there, welcome to my website!
+Hey there, welcome to my website! More text! and more and more and more and more and more and more and more and more
 
 Navigation bar includes [About](/about), [Blog](/blog)
 
