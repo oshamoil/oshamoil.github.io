@@ -6,12 +6,13 @@ body {
 }
 
 a {
-    color: $cloudy;
+    //color: $cloudy;
+    color: tomato;
     font-weight: bold;
     text-decoration: none;
 
     &:hover {
-
+        color: blueviolet;
     }
 }
 
