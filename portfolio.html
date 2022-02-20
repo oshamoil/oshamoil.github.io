@@ -1,0 +1,36 @@
+---
+layout: page
+title: Omid Shamoil's Portfolio
+subtitle: Projects Past & Present
+sitemap:
+  priority: 0.9
+permalink: /portfolio/
+---
+
+<ul class="list-posts">
+    {% for post in site.posts %}
+        {% if post.project %}
+            <li class="post-teaser">
+                <a href="{{ post.url | prepend: site.baseurl }}">
+                    <span class="post-teaser__title">{{ post.title }}</span>
+                </a>
+            </li>
+        {% endif %}
+    {% endfor %}
+</ul>
+
+<!--<section>-->
+<!--    <div class="project-container">-->
+<!--        {% for post in site.posts %}-->
+<!--            {% if post.project %}-->
+<!--                <a href="{{ post.url | prepend: site.baseurl }}">-->
+<!--                    <div class="project-unit" data-folder="{{ post.url | prepend: site.baseurl }}" style="background-image: url({{post.image}})">-->
+<!--                      <div class="project-overlay">-->
+<!--                        <strong>{{ post.title }} <i class="fa fa-arrow-right" aria-hidden="true"></i></strong>-->
+<!--                      </div>-->
+<!--                    </div>-->
+<!--                </a>-->
+<!--            {% endif %}-->
+<!--        {% endfor %}-->
+<!--    </div>-->
+<!--</section>-->

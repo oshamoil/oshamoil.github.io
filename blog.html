@@ -9,7 +9,7 @@ permalink: /blog/
 
 <ul class="list-posts">
     {% for post in site.posts %}
-        {% unless post.hide %}
+        {% unless post.project %}
             <li class="post-teaser">
                 <a href="{{ post.url | prepend: site.baseurl }}">
                     <span class="post-teaser__title">{{ post.title }}</span>
