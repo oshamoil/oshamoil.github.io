@@ -9,7 +9,7 @@ permalink: /portfolio/
 <!--<ul class="list-posts">-->
     {% for post in site.posts %}
         {% if post.project %}
-            <span class="project-teaser">
+            <div class="project-teaser">
 <!--                <a href="{{ post.url | prepend: site.baseurl }}">-->
                     <p class="post-teaser__title">{{ post.title }}</p>
                     <p class="post-teaser__subtitle">{{ post.description }}</p>
@@ -22,7 +22,7 @@ permalink: /portfolio/
                     </span>
 <!--                    <span>{{post.tech}}</span>-->
 <!--                </a>-->
-            </span>
+            </div>
         {% endif %}
     {% endfor %}
 <!--</ul>-->
