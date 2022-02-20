@@ -6,12 +6,9 @@ sitemap:
   priority: 0.9
 permalink: /portfolio/
 ---
-<p>hi 1</p>
 <ul class="list-posts">
     {% for post in site.posts %}
-    <p>hi post</p>
         {% if post.project %}
-            <p> hi project</p>
             <li class="project-teaser">
                 <a href="{{ post.url | prepend: site.baseurl }}">
                     <p class="post-teaser__title">{{ post.title }}</p>
@@ -22,4 +19,3 @@ permalink: /portfolio/
         {% endif %}
     {% endfor %}
 </ul>
-<p> hi 2</p>
