@@ -10,9 +10,11 @@ permalink: /portfolio/
 <ul class="list-posts">
     {% for post in site.posts %}
         {% if post.project %}
-            <li class="post-teaser">
+            <li class="project-teaser">
                 <a href="{{ post.url | prepend: site.baseurl }}">
-                    <span class="post-teaser__title">{{ post.title }}</span>
+                    <p class="post-teaser__title">{{ post.title }}</p>
+                    <p class="post-teaser__subtitle">{{ post.subtitle }}</p>
+                    <br>
                 </a>
             </li>
         {% endif %}

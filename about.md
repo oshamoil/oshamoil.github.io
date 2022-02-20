@@ -22,10 +22,6 @@ this field as a craft, and that we are craftsmen. He instilled in us that how fa
 we go in mastering and refining this craft is **completely** in our hands, and
 from that moment I knew I was hooked.
 
-As I keep going along my Computer Science/Software Engineering journey, I am making
-sure to keep myself present through every step of the journey, and to squeeze as much
-juice out of the current proverbial orange at each step.
-
 My technical interests typically revolve around things I am currently
 itching to learn more about, and right now those are: distributed systems,
 language construction, all things API, and containers. 
