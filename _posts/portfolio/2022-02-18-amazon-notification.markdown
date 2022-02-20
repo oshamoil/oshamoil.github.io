@@ -12,3 +12,5 @@ tech: Python, Twilio, API
 ---
 In progress.
 (For now check out https://github.com/oshamoil/amazon_discount_notification)
+[description]: An app I made for family members to help them keep track of items they are interested in on Amazon, and sending them text messages whenever those products are on sale.
+tech: Python, Twilio, API

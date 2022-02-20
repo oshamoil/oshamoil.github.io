@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Omid Shamoil's Blog
-subtitle: Current topics, books, zen
+subtitle: Me sharing tech topics and tutorials, as well as some occasional book and zazen thoughts
 sitemap:
   priority: 0.9
 permalink: /blog/
@@ -10,12 +10,14 @@ permalink: /blog/
 <ul class="list-posts">
     {% for post in site.posts %}
         {% unless post.project %}
-            <li class="post-teaser">
-                <a href="{{ post.url | prepend: site.baseurl }}">
-                    <span class="post-teaser__title">{{ post.title }}</span>
-                    <span class="post-teaser__date">{{ post.date | date: "%d %B %Y" }}</span>
-                </a>
-            </li>
+            {% unless post.hide %}
+                <li class="post-teaser">
+                    <a href="{{ post.url | prepend: site.baseurl }}">
+                        <span class="post-teaser__title">{{ post.title }}</span>
+                        <span class="post-teaser__date">{{ post.date | date: "%d %B %Y" }}</span>
+                    </a>
+                </li>
+            {% endunless %}
         {% endunless %}
     {% endfor %}
 </ul>
