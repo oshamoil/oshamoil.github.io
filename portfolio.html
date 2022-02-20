@@ -6,16 +6,23 @@ sitemap:
   priority: 0.9
 permalink: /portfolio/
 ---
-<ul class="list-posts">
+<!--<ul class="list-posts">-->
     {% for post in site.posts %}
         {% if post.project %}
-            <li class="project-teaser">
-                <a href="{{ post.url | prepend: site.baseurl }}">
+            <span class="project-teaser">
+<!--                <a href="{{ post.url | prepend: site.baseurl }}">-->
                     <p class="post-teaser__title">{{ post.title }}</p>
-                    <p class="post-teaser__subtitle">{{ post.subtitle }}</p>
+                    <p class="post-teaser__subtitle">{{ post.description }}</p>
                     <br>
-                </a>
-            </li>
+                    <span>
+                    <a href="{{ post.github }}" class="social-links__entry" target="_blank">
+                        <i class="fa fa-github fa-2x proj-gh"></i>
+                    </a>
+                        <span class="proj-tech">{{post.tech}}</span>
+                    </span>
+<!--                    <span>{{post.tech}}</span>-->
+<!--                </a>-->
+            </span>
         {% endif %}
     {% endfor %}
-</ul>
+<!--</ul>-->

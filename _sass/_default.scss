@@ -186,6 +186,7 @@ strong {
 
 .project-teaser p{
     margin: 0;
+    font-weight: bold;
 }
 
 .project-teaser {
@@ -193,8 +194,14 @@ strong {
     border-radius: 25px;
     border: 2px solid #73AD21;
     padding: 20px;
-    width: 200px;
-    height: 150px;
+    width: 400px;
+    height: 200px;
+    margin-bottom: 25px;
+}
+
+.proj-tech {
+    margin: 10px;
+    padding-bottom: 10px;
 }
 
 
