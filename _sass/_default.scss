@@ -201,6 +201,9 @@ strong {
 }
 .project-teaser:hover {
     background-color: #efecf4;
+    //transform: scale(1.05);
+    box-shadow: 5px 5px #0e2231;
+    border: 1px solid;
 }
 
 .proj-tech {
